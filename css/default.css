@@ -2,7 +2,7 @@
 body  {
 	font-family: Palatino, georgia, "times new roman", serif;
 	background-repeat: repeat-x; 
-   background-image:url( file:///home/mehdi/Desktop/website/background.png);
+   background-image:url( file://background.png);
 }
 .shash{
     width: 100%;
