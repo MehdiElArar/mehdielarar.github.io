@@ -1,9 +1,9 @@
 
-body  {
-	font-family: Palatino, georgia, "times new roman", serif;
-	background-repeat: repeat-x; 
-   background-image:url("background.jpg");
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
 }
+
 .shash{
     width: 100%;
     margin:auto;
