@@ -1,9 +1,11 @@
-<style>
 body {
   background-image: url("https://github.com/MehdiElArar/mehdielarar.github.io/blob/master/css/background.jpg?raw=true");
   background-size: cover;
 }
-<style>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="default.css">
+</head>
 
 
 .shash{
