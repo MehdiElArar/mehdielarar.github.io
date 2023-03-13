@@ -2,6 +2,7 @@ body {
   background-image: url('https://raw.githubusercontent.com/MehdiElArar/mehdielarar.github.io/master/background.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: repeat;
 }
 
 .shash{
