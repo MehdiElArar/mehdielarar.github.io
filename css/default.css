@@ -1,0 +1,90 @@
+body {
+  background-image: url('https://raw.githubusercontent.com/MehdiElArar/mehdielarar.github.io/master/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.shash{
+    width: 100%;
+    margin:auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    font-style: italic;
+ }
+ 
+ .shash ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    left: 100%;
+ }
+ .shash ul li a{
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+ }
+ .shash ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #054569;
+    position:absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.1s;
+ }
+ .shash ul li :hover:after{
+  width: 100%;
+ }
+ #idex{
+   width: 100%;
+   margin: auto;
+   padding: 20px 0;
+   display: flex;
+   align-items: center;
+   justify-content:space-around;
+   font-style: italic;
+  }
+ #idex ul li{
+   list-style: none;
+   display: inline-block;
+   margin: 0 20px;
+   position: relative;
+   left: 90%;
+}
+#idex ul li a{
+   text-decoration:none;
+   color: rgb(0, 0, 0);
+   text-transform: uppercase;
+}
+#idex ul li ::after{
+   content: '';
+   height: 3px;
+   width: 0%;
+   background: #04314b;
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   transition: 0.1s;
+}
+#idex ul li :hover:after{
+ width: 100%;
+}
+.asm
+{
+ position: relative;top: 50%;
+}
+#nimo{
+  position: relative;
+  text-align: center;
+}
+#adam{
+   text-align: center ;
+   right: 0;
+   position: relative;
+   
+}
