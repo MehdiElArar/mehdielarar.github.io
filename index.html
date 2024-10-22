@@ -1,109 +1,168 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-<title>El-Mehdi El Arar</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="google-site-verification" content="text/html; charset=utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="text/html; charset=utf-8">
+    <title>El-Mehdi El Arar</title>
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-<link rel="stylesheet" href="css/default.css" type="text/css" />
-<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .hero-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #ddd;
+        }
+
+        .social-buttons a {
+            margin: 5px;
+            font-size: 1rem;
+        }
+
+        .section-title {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        ul.custom-bullets {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+
+        ul.custom-bullets li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #343a40;
+            color: white;
+        }
+
+        footer a {
+            color: #ccc;
+        }
+    </style>
 </head>
 
 <body>
-<div id="Site">
-<div id="page">
 
-  
-     <!-- pages -->  
-     <div class="shash">
-    <ul>
-      <li >
-        
-      <a href="/publications/">Publications</a>
-      </li>        
-  
-      <li>
-        <a  href="/talks/">Talks</a>
-      </li>
-  
-      <li >
-        <a href="/teaching/">Teaching</a>
-      </li>
-    </ul>
-    </div>     
-</div>
-</div>
-<h1>
-<img align="middle" src="photo.jpg" alt="El-Mehdi El Arar :)" width="200" >
-El-Mehdi El Arar </h1>
-  El-Mehdi El Arar<br>
-  University of Rennes - INRIA - IRISA<br>
-  Email: el-mehdi.el-arar@inria.fr<br>
-  <a href="https://www.linkedin.com/in/el-mehdi-el-arar-34b649210/"><i class="icon-linkedin"></i></a>
-  &nbsp;
-  <a href="http://github.com/MehdiElArar"> <i class="icon-github"></i> </a>
-  
-</h1>
- 
-<!-- Contacts -->  
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-home"></i> El-Mehdi El Arar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications/index.html"><i class="fas fa-book-open"></i> Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="talks/index.html"><i class="fas fa-microphone"></i> Talks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="teaching/index.html"><i class="fas fa-chalkboard-teacher"></i> Teaching</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<div class='section'>
-<h1 id='aboutme' align="center">About Me</h1>
-<p style="margin-left: 50px; margin-right: 50px;" >  Since February 2024, I am a postdoctoral researcher at the <a href="https://www.univ-rennes.fr/en">University of Rennes</a>, as a member of the 
-	<a href="https://team.inria.fr/taran/">Taran</a> team of <a href="https://www.inria.fr/fr/centre-inria-universite-rennes">INRIA Rennes</a> with 
-	<a href="https://people.rennes.inria.fr/Olivier.Sentieys/">Olivier Sentieys</a> and <a href="https://people.irisa.fr/Silviu-Ioan.Filip/">Silviu-Ioan Filip</a>. My
-	research focuses on probabilistic error analysis of deep neural networks using floating-point and fixed-point arithmetics. Before that, from February 1, 2021, to December 19, 2023,
-	I was a PhD student at the  <a href="https://www.universite-paris-saclay.fr/en">Paris-Saclay University</a>. My supervisors during my PhD were Devan Sohier,
-	<a href="https://sifflez.org/">Pablo de Oliveira Castro</a> and Eric Petit, and my research involved the use of stochastic tools to perform algorithms under stochastic rounding.
-</p>
-<div class='section'>
-<h1 id='research' align="center">Projects</h1>
-<p >
-<ul >
-	<li><a href="https://www.interflop.fr/">Interflop</a> : Thesis</li> 
-	<li><a https://www.pepr-ia.fr/projet/holigrail/">PEPR IA Holigrail</a> : Post-doc</li> 
-	<li>PEPES JCJC 2024 with <a href="https://www.anasbouali.com/">Anas Bouali</a>: 
-		Stochastic Rounding Effects on Solving Optimal Control Problems</li>
-	
-</ul>
-</p>
-</div>	
-</p>	
-<div class='section'>
-<h1 id='research' align="center">Research Interests</h1>
-<p >
-<ul >
-	<li>Floating-point arithmetic, Stochastic rounding</li>
-	<li>Rounding error analysis, Low precision, Mixed precision</li> 
-	<li>Deep learning, Quantization, Numerical linear algebra</li> 
-	<li>Numerical computations, Computer arithmetic</li>
-</ul>
-</p>
-</div>
-</div>
-	                                    
-          
-      
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <img src="photo.jpg" alt="El-Mehdi El Arar">
+        <h1>El-Mehdi El Arar</h1>
+        <p>Postdoctoral Researcher at <a href="https://www.univ-rennes.fr/en">University of Rennes</a></p>
 
-</header>
+        <div class="social-buttons">
+            <a href="mailto:el-mehdi.el-arar@inria.fr" class="btn btn-outline-secondary btn-sm">
+                <i class="fas fa-envelope"></i> Email Me
+            </a>
+            <a href="https://www.linkedin.com/in/el-mehdi-el-arar-34b649210/" class="btn btn-outline-primary btn-sm">
+                <i class="fab fa-linkedin"></i> LinkedIn Profile
+            </a>
+            <a href="http://github.com/MehdiElArar" class="btn btn-outline-dark btn-sm">
+                <i class="fab fa-github"></i> GitHub Profile
+            </a>
+        </div>
+    </div>
 
- <div >
-	<address>
-		<span>
-			Original Design by <a href="http://mehdielarar.github.io">El-Mehdi El Arar</a>
-            <br />  
-			
-		</span>
+    <!-- About Me Section -->
+    <div class="container">
+        <h2 class="section-title" id="aboutme">About Me</h2>
+        <p class="text-center">
+            Since February 2024, I am a postdoctoral researcher at the <a href="https://www.univ-rennes.fr/en">University of Rennes</a>, as a member of the 
+            <a href="https://team.inria.fr/taran/">Taran</a> team of <a href="https://www.inria.fr/fr/centre-inria-universite-rennes">INRIA Rennes</a> with 
+            <a href="https://people.rennes.inria.fr/Olivier.Sentieys/">Olivier Sentieys</a> and <a href="https://people.irisa.fr/Silviu-Ioan.Filip/">Silviu-Ioan Filip</a>. My
+            research focuses on probabilistic error analysis of deep neural networks using floating-point and fixed-point arithmetics. Before that, from February 1, 2021, to December 19, 2023,
+            I was a PhD student at the  <a href="https://www.universite-paris-saclay.fr/en">Paris-Saclay University</a>. My supervisors during my PhD were Devan Sohier,
+            <a href="https://sifflez.org/">Pablo de Oliveira Castro</a> and Eric Petit, and my research involved the use of stochastic tools to perform algorithms under stochastic rounding.
+        </p>
+    </div>
 
-	</address>
-  </div>
+    <!-- Projects Section -->
+    <div class="container">
+        <h2 class="section-title" id="projects">Projects</h2>
+        <ul class="custom-bullets">
+            <li><a href="https://www.interflop.fr/">Interflop</a>: Thesis</li>
+            <li><a href="https://www.pepr-ia.fr/projet/holigrail/">PEPR IA Holigrail</a>: Post-doc</li>
+            <li>PEPES JCJC 2024 with <a href="https://www.anasbouali.com/">Anas Bouali</a>: Stochastic Rounding Effects on Solving Optimal Control Problems</li>
+        </ul>
+    </div>
 
-</m> 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <!-- Research Interests Section -->
+    <div class="container">
+        <h2 class="section-title" id="interests">Research Interests</h2>
+        <ul class="custom-bullets">
+            <li>Floating-point arithmetic, Stochastic rounding</li>
+            <li>Rounding error analysis, Low precision, Mixed precision</li>
+            <li>Deep learning, Quantization, Numerical linear algebra</li>
+            <li>Numerical computations, Computer arithmetic</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Original Design by <a href="http://mehdielarar.github.io">El-Mehdi El Arar</a></p>
+        <p>&copy; 2024 El-Mehdi El Arar</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
+
 </html>
