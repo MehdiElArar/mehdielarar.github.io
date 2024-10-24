@@ -17,16 +17,29 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f8f9fa;
+            background: linear-gradient(135deg, #f0f0f0 0%, #dfe4ea 100%);
         }
 
         .navbar {
-            margin-bottom: 20px;
+            margin-bottom: 0; /* Remove bottom margin to avoid gap between navbar and hero section */
+            background-color: #343a40;
         }
 
-        .post-header {
+        .navbar a {
+            color: white;
+        }
+
+        .hero-section {
             text-align: center;
-            margin-top: 30px;
+            background: linear-gradient(135deg, #4b79a1 0%, #283e51 100%);
+            color: white;
+            padding: 50px 0;
+            margin-bottom: 30px;
+        }
+
+        .hero-section h1 {
+            margin: 0;
+            font-size: 3rem;
         }
 
         .talk-entry {
@@ -35,7 +48,7 @@
 
         footer {
             text-align: center;
-            padding: 15px 0;
+            padding: 5px 0;
             background-color: #343a40;
             color: white;
         }
@@ -49,7 +62,7 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="/"><i class="fas fa-home"></i> El-Mehdi El Arar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -72,12 +85,13 @@
         </div>
     </nav>
 
-    <!-- Content Section -->
-    <div class="container mt-5">
-        <header class="post-header">
-            <h1 class="post-title">Talks</h1>
-        </header>
+    <!-- Hero Section (Header like index page) -->
+    <div class="hero-section">
+        <h1>Talks</h1>
+    </div>
 
+    <!-- Content Section -->
+    <div class="container">
         <!-- Talk Entries -->
         <div class="talk-entry">
             <strong>RAIM 2023: 14èmes Rencontres Arithmétique de l'Informatique Mathématique</strong>
@@ -151,9 +165,9 @@
     </div>
 
     <!-- Footer -->
-    <footer>
-        <p>Original Design by <a href="http://mehdielarar.github.io">El-Mehdi El Arar</a></p>
-        <p>&copy; 2024 El-Mehdi El Arar</p>
+    <footer class="mt-4">
+        <p class="mt-2">Original Design by <a href="http://mehdielarar.github.io">El-Mehdi El Arar</a></p>
+        
     </footer>
 
     <!-- Bootstrap JS -->

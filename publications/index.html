@@ -17,16 +17,29 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f8f9fa;
+            background: linear-gradient(135deg, #f0f0f0 0%, #dfe4ea 100%);
+            color: #333;
         }
 
         .navbar {
-            margin-bottom: 20px;
+            margin-bottom: 0;
+            background-color: #343a40;
         }
 
-        .post-header {
+        .navbar a {
+            color: white;
+        }
+
+        .hero-section {
             text-align: center;
-            margin-top: 30px;
+            background: linear-gradient(135deg, #4b79a1 0%, #283e51 100%);
+            color: white;
+            padding: 50px 0;
+        }
+
+        .hero-section h1 {
+            margin: 0;
+            font-size: 3rem;
         }
 
         .publication-entry {
@@ -34,13 +47,24 @@
         }
 
         .btn-link {
+            background-color: transparent;
+            border: none;
+            color: #007bff;
+            text-decoration: underline;
+            padding: 0;
             font-size: 0.9rem;
             margin: 0 5px;
         }
 
+        .btn-link:hover {
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+        }
+
         footer {
             text-align: center;
-            padding: 15px 0;
+            padding: 5px 0;
             background-color: #343a40;
             color: white;
         }
@@ -54,7 +78,7 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="/"><i class="fas fa-home"></i> El-Mehdi El Arar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -77,22 +101,23 @@
         </div>
     </nav>
 
+    <!-- Hero Section (Header like index page) -->
+    <div class="hero-section">
+        <h1>Publications</h1>
+        <p>Links to my published/preprint journal and conference papers.</p>
+    </div>
+
     <!-- Content Section -->
     <div class="container mt-5">
-        <header class="post-header">
-            <h1 class="post-title">Publications</h1>
-            <p class="post-description">Links to my published/preprint journal and conference papers.</p>
-        </header>
-
         <!-- Publication Entries -->
         <div class="publication-entry">
             <strong>Probabilistic Error Analysis of Limited-Precision Stochastic Rounding</strong>
             <p>El-Mehdi El Arar, Massimiliano Fasi, Silviu-Ioan Filip, Mantas Mikaitis<br> 
             Preprint, 2024.
-            <a href="https://arxiv.org/abs/2408.03069" class="btn btn-outline-primary btn-sm btn-link">
+            <a href="https://arxiv.org/abs/2408.03069" class="btn btn-link btn-sm">
                 <i class="fas fa-link"></i> https
             </a>
-            <a href="https://arxiv.org/pdf/2408.03069" class="btn btn-outline-secondary btn-sm btn-link">
+            <a href="https://arxiv.org/pdf/2408.03069" class="btn btn-link btn-sm">
                 <i class="fas fa-file-pdf"></i> PDF
             </a>
             </p>
@@ -102,10 +127,10 @@
             <strong>Bounds on Non-Linear Errors for Variance Computation with Stochastic Rounding</strong>
             <p>El-Mehdi El Arar, D. Sohier, P. de Oliveira Castro, E. Petit <br>
             SIAM Journal on Scientific Computing.
-            <a href="https://epubs.siam.org/doi/10.1137/23M1563001" class="btn btn-outline-primary btn-sm btn-link">
+            <a href="https://epubs.siam.org/doi/10.1137/23M1563001" class="btn btn-link btn-sm">
                 <i class="fas fa-link"></i> https
             </a>
-            <a href="https://hal.science/hal-04056057v1/document" class="btn btn-outline-secondary btn-sm btn-link">
+            <a href="https://hal.science/hal-04056057v1/document" class="btn btn-link btn-sm">
                 <i class="fas fa-file-pdf"></i> PDF
             </a> <br>
              This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” 
@@ -115,16 +140,15 @@
                 https://github.com/verificarlo/sr-non-linear-bounds</a> </p> 
              </p>
             </div>
-        
 
         <div class="publication-entry">
             <strong>Stochastic Rounding Variance and Probabilistic Bounds: A New Approach</strong>
             <p>El-Mehdi El Arar, D. Sohier, P. de Oliveira Castro, E. Petit<br>
             SIAM Journal on Scientific Computing.
-            <a href="https://epubs.siam.org/doi/10.1137/22M1510819" class="btn btn-outline-primary btn-sm btn-link">
+            <a href="https://epubs.siam.org/doi/10.1137/22M1510819" class="btn btn-link btn-sm">
                 <i class="fas fa-link"></i> https
             </a>
-            <a href="https://arxiv.org/pdf/2207.10321.pdf" class="btn btn-outline-secondary btn-sm btn-link">
+            <a href="https://arxiv.org/pdf/2207.10321.pdf" class="btn btn-link btn-sm">
                 <i class="fas fa-file-pdf"></i> PDF
             </a>
            </p>
@@ -134,10 +158,10 @@
             <strong>The Positive Effects of Stochastic Rounding in Numerical Algorithms</strong>
             <p>El-Mehdi El Arar, D. Sohier, P. de Oliveira Castro, E. Petit<br>
             In <em>29th IEEE Symposium on Computer Arithmetic (ARITH 2022)</em>, Virtual Conference, France, 2022.
-            <a href="https://ieeexplore.ieee.org/document/9974467" class="btn btn-outline-primary btn-sm btn-link">
+            <a href="https://ieeexplore.ieee.org/document/9974467" class="btn btn-link btn-sm">
                 <i class="fas fa-link"></i> https
             </a>
-            <a href="https://arxiv.org/pdf/2207.03837.pdf" class="btn btn-outline-secondary btn-sm btn-link">
+            <a href="https://arxiv.org/pdf/2207.03837.pdf" class="btn btn-link btn-sm">
                 <i class="fas fa-file-pdf"></i> PDF
             </a>
         </p>
@@ -145,11 +169,10 @@
     </div>
 
     <!-- Footer -->
-    <footer>
-        <p>Original Design by <a href="http://mehdielarar.github.io">El-Mehdi El Arar</a></p>
-        <p>&copy; 2024 El-Mehdi El Arar</p>
+    <footer class="mt-4">
+        <p class="mt-2">Original Design by <a href="http://mehdielarar.github.io">El-Mehdi El Arar</a></p>
+        
     </footer>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
