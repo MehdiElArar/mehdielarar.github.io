@@ -101,6 +101,24 @@
         footer a {
             color: #ccc;
         }
+        
+        .news-heading {
+            display: inline-block;
+            padding: 0.3em 0.8em;
+            background: linear-gradient(135deg, #0f1a25, #e25170);
+            color: white;
+            border-radius: 50px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(103, 58, 183, 0.3);
+            font-weight: 600;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(.5); }
+            50% { transform: scale(.90); }
+            100% { transform: scale(.5); }
+        }
 
     </style>
     
@@ -167,23 +185,13 @@
         </p>
     </div>
 
-    <!-- Offers Section -->
-    <div class="container">
-        <h2 class="section-title text-center" id="offers">Offers</h2>
-        <p class="">
-            Internship offer with <a href="https://people.irisa.fr/Silviu-Ioan.Filip/">Silviu-Ioan Filip</a> at INRIA Rennes, France:
-            <div style="text-align: center;"> Limited-Precision Stochastic Rounding and its use in Gradient Descent-Based Optimization. 
-                <a href="./stage.pdf" class="btn btn-link btn-sm"> <i class="fas fa-file-pdf"></i> PDF </a> 
-            </div>
-        </p>
-    </div>
 
     <!-- Software Section -->
     <div class="container">
         <h2 class="section-title text-center" id="offers">Software</h2>
         <ul >
             <li >
-                <a href="https://github.com/MehdiElArar/srfloat">srfloat</a>: a C++ simulation library for limited-precision stochastic rounding, with optional Python bindings 
+                <a href="https://github.com/MehdiElArar/srfloat">srfloat</a>: a C++ simulation library for limited-precision stochastic rounding and round to nearest in faible precision, with optional Python bindings 
             </li>
         </ul>
     </div>
@@ -191,17 +199,27 @@
 
     <!-- Projects Section -->
     <div class="container">
-        <h2 class="section-title text-center" id="projects">Projects</h2>
+        <h2 class="section-title text-center" id="projects">
+            <span class="news-heading">News</span>
+        </h2>
         <ul >
-            <li >
-                <a href="https://www.interflop.fr/">Interflop</a>: Thesis 
+            <li style="margin-bottom: 10px;">
+                <strong>September 1 to 5, 2025: </strong> Presentation at <a href="https://enumath2025.eu/">ENUMATH conference</a>.
+                 Heidelberg, Germany
             </li>
-            <li >
-                <a href="https://www.pepr-ia.fr/projet/holigrail/">PEPR IA Holigrail</a>: Post-doc
+            <li style="margin-bottom: 10px;">
+                <strong>June 16 to 18, 2025: </strong> Presentation at <a href="https://pasc25.pasc-conference.org/">PASC25 conference</a>.
+                 Windisch, Switzerland
             </li>
-            <li >
-                PEPES JCJC 2024 with <a href="https://www.anasbouali.com/">Anas Bouali</a>: 
-                Stochastic Rounding Effects on Solving Optimal Control Problems
+            <li style="margin-bottom: 10px;">
+                <strong>Mars 17, 2025: </strong> New preprint: Mixed Precision Accumulation for Neural Network Inference Guided by Componentwise Forward Error Analysis
+                <p> <a href="https://hal.science/hal-04995708" class="btn btn-link btn-sm">
+                    <i class="fas fa-link"></i> https
+                </a>
+                <a href="https://hal.science/hal-04995708v1/document" class="btn btn-link btn-sm">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+                </p>
             </li>
         </ul>
     </div>
